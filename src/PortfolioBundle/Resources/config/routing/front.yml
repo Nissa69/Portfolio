@@ -1,0 +1,4 @@
+front_index:
+    path:     /
+    defaults: { _controller: "PortfolioBundle:Veille:index" }
+    methods: GET

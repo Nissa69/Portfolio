@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<section>
+    <div class="container veillelist">
+        <div class="col-xs-12">
+            <h1>Liste des Veilles</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Titre</th>
+                        <th>Image</th>
+                        <th>Url</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for veille in veilles %}
+                    <tr>
+                        <td><a href="{{ path('veille_show', { 'id': veille.id }) }}">{{ veille.id }}</a></td>
+                        <td>{{ veille.title }}</td>
+                        <td>{{ veille.image }}</td>
+                        <td>{{ veille.url }}</td>
+                        <td>{{ veille.description }}</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <a href="{{ path('veille_show', { 'id': veille.id }) }}">show</a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('veille_edit', { 'id': veille.id }) }}">edit</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+
+            <ul>
+                <li>
+                    <a href="{{ path('veille_new') }}">Create a new veille</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}

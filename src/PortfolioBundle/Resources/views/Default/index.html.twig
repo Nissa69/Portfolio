@@ -1,0 +1,79 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <!-- Ajout du code html -->
+<section id="topsection">
+    <div class="container presentation">
+        <div class="col-xs-12 col-md-6 name">
+            <h1 class="intro">
+                <span class="bleu">Yann Chanteloup</span><br/>
+                29 ans <br/>
+                <span class="blanc">Lyon</span><br/>
+                <span class="gris">Web developpeur</span>
+            </h1>
+        </div>
+        <div class="col-xs-12 col-md-6 img-prez">
+                <img src="{{ asset('MEDIA/yann-chanteloup.jpg') }}">
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container description">
+        <div>
+            <h2>Petite déscription</h2>
+            <hr>
+        </div>
+            <p>
+                En formation developpeur web à la <strong>Wild Code School</strong> de LYON, je me réoriente actuellement dans ce secteur que je juge porteur, après une longue expérience dans la <strong>photographie</strong> pro en tant que reporter.<br/>
+
+                Attiré par le goût de l'image, le design, j'aime réfléchir à l'ergonomie et désire maintenant passer derrière le rideau pour pouvoir m'occuper de tout ce que l'on ne voit pas.<br/>
+
+                Curieux de nature me lancer et aboutir sur des expériences concrètes est une priorité dans chaque domaine que j'entreprends.<br/>
+
+                Vous pouvez me <strong>contacter</strong> via mon adresse pro : yann.chanteloup.pro@gmail.com<br/>
+                Suivez mon évolution au sein de l'école en regardant mes projets sur <strong>github</strong>  ; https://github.com/Nissa69
+            </p>
+    </div>
+</section>
+
+<section>
+    <div class="container projets">
+        <div class="col-xs-12">
+            <h2>Mes derniers <strong>projets</strong></h2>
+            <hr>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <img src="{{ asset('MEDIA/comingsoon.jpg') }}"><br/>
+            <p>Projet 1 : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum <strong>efficitur convallis lacus.</strong> Praesent in sagittis dolor. Ut convallis turpis sed ex semper tempor.</p>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <img src="{{ asset('MEDIA/comingsoon.jpg') }}"><br/>
+            <p>Projet 2 : Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit</strong>. Vestibulum efficitur convallis lacus. Praesent in sagittis dolor. Ut convallis turpis sed ex semper tempor.</p>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <img src="{{ asset('MEDIA/comingsoon.jpg') }}"><br/>
+            <p>Projet 3 : Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit. Vestibulum efficitur convallis lacus. Praesent in sagittis dolor. Ut convallis turpis sed ex semper tempor.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container veille">
+        <div class="col-xs-12">
+            <h2>Ma veille de la semaine !</h2>
+            <hr>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <img src="{{ asset('MEDIA/comingsoon.jpg') }}">
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit. Vestibulum efficitur convallis lacus. Praesent in sagittis dolor.</p>
+        </div>
+    </div>
+</section>
+
+<
+
+
+{% endblock %}

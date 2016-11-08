@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<section>
+    <div class="container editopform">
+        <div class="col-xs-12">
+            <h1>Veille edit</h1>
+
+            {{ form_start(edit_form) }}
+            {{ form_widget(edit_form) }}
+            {{ form_row(edit_form.image) }}
+            <input type="submit" value="Edit" />
+            {{ form_end(edit_form) }}
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container editbotform">
+        <div class="col-xs-12">
+            <ul>
+                <li>
+                    <a href="{{ path('veille_index') }}">Back to the list</a>
+                </li>
+                <li>
+                    {{ form_start(delete_form) }}
+                        <input type="submit" value="Delete">
+                    {{ form_end(delete_form) }}
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}

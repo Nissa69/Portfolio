@@ -1,0 +1,24 @@
+veille_index:
+    path:     /
+    defaults: { _controller: "PortfolioBundle:Veille:index" }
+    methods:  GET
+
+veille_show:
+    path:     /{id}/show
+    defaults: { _controller: "PortfolioBundle:Veille:show" }
+    methods:  GET
+
+veille_new:
+    path:     /new
+    defaults: { _controller: "PortfolioBundle:Veille:new" }
+    methods:  [GET, POST]
+
+veille_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "PortfolioBundle:Veille:edit" }
+    methods:  [GET, POST]
+
+veille_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "PortfolioBundle:Veille:delete" }
+    methods:  DELETE
